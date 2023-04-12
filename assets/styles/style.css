@@ -260,3 +260,61 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/*media query*/
+
+@media (max-width: 768px) {
+  /* nav bar */
+  nav .login {
+    display: none;
+  }
+
+  /* nav elements */
+  nav img {
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  nav li a {
+    padding: 10px;
+  }
+
+  /* main content */
+  .main {
+    flex-direction: column;
+  }
+
+  /* left and right content */
+  .left {
+    padding: 10px;
+  }
+
+  .right {
+    padding: 10px;
+  }
+
+  /* image in blog section */
+  .image-text-container {
+    flex-direction: column;
+  }
+
+  .image-text-container img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /*padding in footer */
+  footer {
+    padding: 20px;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+  }
+
+  .footer-links li {
+    margin-right: 10px;
+  }
+}
