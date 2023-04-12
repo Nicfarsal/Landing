@@ -261,8 +261,7 @@ footer {
   text-decoration: underline;
 }
 
-/*media query*/
-
+/* media query for mobile phones */
 @media (max-width: 768px) {
   /* nav bar */
   nav .login {
@@ -305,7 +304,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  /*padding in footer */
+  /* padding in footer */
   footer {
     padding: 20px;
   }
