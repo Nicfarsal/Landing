@@ -1,4 +1,5 @@
 # Landing
 Proyecto UDD 1
 primera parte del proyecto
-aun no terminado
+Proyecto terminado
+pequenos detalles de responsividad que podria refinar

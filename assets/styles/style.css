@@ -20,8 +20,6 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
@@ -32,7 +30,7 @@ nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -45,14 +43,21 @@ nav li a:hover {
 
 nav li:first-child {
   padding: 0;
-  margin-right: auto;
+  margin-top: 15px;
 }
 
 nav img {
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 10px;
+  display: none;
+}
+
+nav li a {
+  display: flex;
+  align-items: center;
+
+}
+
+nav li:first-child {
+  display: none;
 }
 
 nav .login {
@@ -75,7 +80,7 @@ nav .login a:hover {
 .left {
   flex: 1;
   background-color: #f1f1f1;
-  padding-left: 10px;
+  padding-left: 0;
   text-align: center;
 }
 
@@ -96,7 +101,7 @@ label {
 
 input,
 label {
-  margin: 0.4rem 0;
+  margin: 0;
 }
 
 .send-button {
@@ -108,7 +113,7 @@ label {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 4px 2px;
+  margin: 0;
   cursor: pointer;
   border-radius: 20px;
   transition: 300ms;
@@ -124,17 +129,14 @@ label {
 .right {
   flex: 1;
   background-color: #f1f1f1;
-  padding-right: 10px;
+  padding-right: 0;
   align-items: center;
 }
 
 .logo {
   width: 90%;
   height: auto;
-  padding-left: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius:50px ;
+  border-radius: 50px;
 }
 
 /*SECTION-SALES*/
@@ -171,7 +173,7 @@ section {
 .salesitems {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 img {
@@ -185,7 +187,6 @@ img {
   font-weight: bold;
   border: none;
   border-radius: 4px;
-  padding: 10px 80px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -226,8 +227,7 @@ img {
 footer {
   background-color: #333;
   color: #f1f1f1;
-  padding: 50px 0;
-  margin-top: 20px;
+
 }
 
 .footer-content {
@@ -244,7 +244,7 @@ footer {
 
 .redes img {
   height: 30px;
-  margin-right: 10px;
+
 }
 
 .footer-links ul {
@@ -269,6 +269,7 @@ footer {
 
 /* media query for mobile phones */
 @media (max-width: 768px) {
+
   /* nav bar */
   nav .login {
     display: flex;
@@ -322,4 +323,9 @@ footer {
   .footer-links li {
     margin-right: 10px;
   }
+
+  .redes {
+    display: none;
+  }
+
 }
